@@ -11,7 +11,7 @@ exports.createUser = async (req, res) => {
         message: "Please fill all fields",
       });
     }
-    const user = await User.create({
+    const user = await User.create ( {
       name,
       email,
       title,
