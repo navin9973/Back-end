@@ -61,7 +61,7 @@ exports.isAdmin=(req,res,next)=>{
   if(req.user.role!=="admin"){
     return res.status(401).json({
       success:false,
-      message:"this is protected route for admin you can enter in this route it is for admin only",
+      message:"this is protected route for admin you can enter in this route it is for admin only"
     })
   }
   }
